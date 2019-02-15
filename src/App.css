@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #333;
+  padding: 0px 10px 0px 10px;
+  font-family:'Roboto Condensed', serif;
+  background-color: #333;
+  color: white;
+}
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.nav-item {
+  margin: 5px 10px 5px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.fab:hover {
+  color: red;
+}
+
+.projects {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.project {
+  margin: 0px 10px 10px 10px;
+  box-shadow: 0px 4px 6px #333;
+  padding: 5px;
+}
+.project-desc {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  
+
+}
+.project-img {
+  height: 200px;
+  width: 300px;
+  outline: 1px solid #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+}
+
+.submit-button {
+  width: 25%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  min-height: 400px;
+  
+}
+
+.skill {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+}
+.contact-form {
+  margin-top: 75px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+footer a {
+  color: white;
+}
