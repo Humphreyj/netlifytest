@@ -10,7 +10,11 @@ const Projects = (props) => {
     	<div className='projects'>
 			<div className='project'>
 				<img className='project-img' src={bizShop} alt='project 1'/>
-				<p className='project-desc'>Static website using CSS grid.</p>
+				<div className="project-info">
+					<p className='project-desc'>Static website using CSS grid.</p>
+					<i className="fas fa-code"></i>
+				</div>
+				
 			</div>
 
 			<div className='project'>
