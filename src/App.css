@@ -161,8 +161,8 @@ footer a {
   color: white;
 }
 
-button {
-  width: auto;
+.submit-button {
+  width: 50%;
 }
 
 }
