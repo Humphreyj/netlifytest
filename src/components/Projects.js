@@ -44,7 +44,7 @@ const Projects = (props) => {
 			<div className='project'>
 				<img className='project-img' src={calc} alt='project 5'/>
 				<div className="project-info">
-					<p className='project-desc'>Weather App with React and Flexbox</p>
+					<p className='project-desc'>Simple calculator with React and Flexbox</p>
 					<a href='https://github.com/Humphreyj/calculon'><i className="fas fa-code"></i></a>
 				</div>
 			</div>
