@@ -102,6 +102,7 @@ form {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 50%;
   margin: auto;
