@@ -161,4 +161,8 @@ footer a {
   color: white;
 }
 
+button {
+  width: auto;
+}
+
 }
