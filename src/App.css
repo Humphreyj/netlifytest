@@ -28,7 +28,7 @@
   text-decoration: underline;
 }
 
-.fab:hover {
+.nav:hover {
   color: red;
 }
 
@@ -63,6 +63,7 @@
   height: 200px;
   width: 300px;
   outline: 1px solid #333;
+
 }
 
 .fas {
@@ -90,6 +91,11 @@ form {
 .about-title {
   font-family:'Roboto Condensed',sans-serif;
   font-size: 22px;
+}
+.me {
+  border-radius: 12px;
+  height: 215px;
+  width: 215px;
 }
 .about-text {
   padding: 10px;
@@ -139,4 +145,20 @@ footer {
 }
 footer a {
   color: white;
+}
+
+@media (max-width: 500px) {
+  .skills {
+    width: 80%;
+    align-items: center;
+  }
+
+  .nav-item:hover {
+  text-decoration: none;
+}
+
+.nav:hover {
+  color: white;
+}
+
 }

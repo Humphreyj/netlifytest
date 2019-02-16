@@ -1,5 +1,6 @@
 import React from 'react';
 
+import meSmiling from '.././img/meSmiling.jpg'
 const About = (props) => {
 	const date = new Date()
 	const hours = date.getHours()
@@ -17,9 +18,12 @@ const About = (props) => {
     	<div className='about-me'>
     		<h3 className='about-title'>About Me</h3>
 			<div className='my-photo'>
-				<img src="https://fillmurray.com/g/200/200" alt='Josh Humphrey'/ >
+				<img className='me' src={meSmiling} alt='Josh Humphrey'/ >
 			</div>
-			<p className='about-text'>Good {timeOfDay} For the last decade I was working towards becoming a chef. In 2016 I decided I wanted a change and began learning to code. I have found a new passion and I am seeking new opportunites for education and employment.</p>
+			<p className='about-text'>Good {timeOfDay} 
+			<br/>
+			<br/>
+			For the last decade I was working towards becoming a chef. In 2016 I decided I wanted a change and began learning to code. I have found a new passion and I am seeking new opportunities for education and employment.</p>
 			<h3>Skills</h3>
 			<div className='skills'>
 			
