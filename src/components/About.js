@@ -19,18 +19,23 @@ const About = (props) => {
 			<div className='my-photo'>
 				<img src="https://fillmurray.com/g/200/200" alt='Josh Humphrey'/ >
 			</div>
-			<p className='about-text'>Good {timeOfDay} For the last decade I was working towards becoming a chef. In 2016 I decided I wanted a change.
-				I began learning to code and am now proficient in HTML, CSS, JavaScript and React. </p>
+			<p className='about-text'>Good {timeOfDay} For the last decade I was working towards becoming a chef. In 2016 I decided I wanted a change and began learning to code. I have found a new passion and I am seeking new opportunites for education and employment.</p>
+			<h3>Skills</h3>
 			<div className='skills'>
-				<div className='skill'>
-					<img className='skillBadge' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/173442/HTML5_Badge.svg' alt='HTML Badge'/>
+			
+				
+				<div className="skill-box">
+					<p className="skill html5"><i className="fab fa-html5"></i> HTML5: Proficient</p>
+					<p className="skill css3"><i className="fab fa-css3-alt"></i> CSS3: Proficient</p>
+					<p className="skill javascript"><i className="fab fa-js-square"></i> JavaScript: Learning</p>
+					
 				</div>
-				<div className='skill'>
-					<img className='skillBadge' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/173442/CSS3_Badge.svg' alt='CSS Badge'/>
+				<div className="skill-box">
+					<p className="skill css3 react"><i className="fab fa-react"></i>React: Proficient</p>
+					<p className="skill git"><i class="fab fa-github-square"></i> Git: Proficient</p>
+					<p className="skill css3"><i class="fab fa-adobe"></i> Adobe Creative : Learning</p>
 				</div>
-				<div className='skill'>
-					<img className='skillBadge' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/173442/JS_Badge.svg' alt='JavaScript Badge'/>
-				</div>
+
 			</div>
     	</div>
         
