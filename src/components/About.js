@@ -15,11 +15,12 @@ const About = (props) => {
 
     return (
     	<div className='about-me'>
-    		<h3>About Me</h3>
+    		<h3 className='about-title'>About Me</h3>
 			<div className='my-photo'>
 				<img src="https://fillmurray.com/g/200/200" alt='Josh Humphrey'/ >
 			</div>
-			<p>Good {timeOfDay} dolor sit amet, consectetur adipisicing elit. Deserunt repellat facere, ad nihil ipsa error quo quia, laudantium adipisci repellendus!</p>
+			<p className='about-text'>Good {timeOfDay} For the last decade I was working towards becoming a chef. In 2016 I decided I wanted a change.
+				I began learning to code and am now proficient in HTML, CSS, JavaScript and React. </p>
 			<div className='skills'>
 				<div className='skill'>
 					<img className='skillBadge' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/173442/HTML5_Badge.svg' alt='HTML Badge'/>

@@ -65,6 +65,14 @@
   outline: 1px solid #333;
 }
 
+.fas {
+  color: #333;
+}
+
+.fas:hover {
+  color: red;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -77,6 +85,19 @@ form {
   width: 25%;
   margin: auto;
   cursor: pointer;
+}
+
+.about-title {
+  font-family:'Roboto Condensed',sans-serif;
+  font-size: 22px;
+}
+.about-text {
+  padding: 10px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  font-family:'Merriweather', serif;
+  line-height: 2em;
 }
 
 .skills {
