@@ -8,20 +8,16 @@ import calc from '../img/calc.png'
 const Projects = (props) => {
     return (
     	<div className='projects'>
-			<div className='project'>
-				<img className='project-img' src={bizShop} alt='project 1'/>
-				<div className="project-info">
-					<p className='project-desc'>Static website using CSS grid.</p>
-					<a href='https://github.com/Humphreyj/business-shop'><i className="fas fa-code"></i></a>
-				</div>
-				
-			</div>
-
+			
 			<div className='project'>
 				<img className='project-img' src={levelZ} alt='project 2'/>
 				<div className="project-info">
 					<p className='project-desc'>Static website with parallax scrolling.</p>
-					<a href='https://github.com/Humphreyj/levelZ'><i className="fas fa-code"></i></a>
+					<div className="proj-buttons">
+						<a href='https://cookinglevel0.netlify.com/' className='proj-link'>View Site</a>
+						<a href='https://github.com/Humphreyj/levelZ'><i className="fas fa-code"></i></a>
+
+					</div>{/*Project buttons*/}
 				</div>
 			</div>
 
@@ -29,7 +25,11 @@ const Projects = (props) => {
 				<img className='project-img' src={theOar} alt='project 3'/>
 				<div className="project-info">
 					<p className='project-desc'>Ship tracker for a seafaring tabletop adventure.</p>
-					<a href='https://github.com/Humphreyj/ship-manager'><i className="fas fa-code"></i></a>
+					<div className="proj-buttons">
+						<a href='https://ship-manager.netlify.com/' className='proj-link'>View Site</a>
+						<a href='https://github.com/Humphreyj/ship-manager'><i className="fas fa-code"></i></a>
+
+					</div>{/*Project buttons*/}
 				</div>
 			</div>
 
@@ -37,7 +37,11 @@ const Projects = (props) => {
 				<img className='project-img' src={weather} alt='project 4'/>
 				<div className="project-info">
 					<p className='project-desc'>Weather App with React and Flexbox</p>
-					<a href='https://github.com/Humphreyj/weather-app'><i className="fas fa-code"></i></a>
+					<div className="proj-buttons">
+						<a href='https://humphrey-weather.netlify.com/' className='proj-link'>View Site</a>
+						<a href='https://github.com/Humphreyj/weather-app'><i className="fas fa-code"></i></a>
+
+					</div>{/*Project buttons*/}
 				</div>
 			</div>
 
@@ -45,7 +49,10 @@ const Projects = (props) => {
 				<img className='project-img' src={calc} alt='project 5'/>
 				<div className="project-info">
 					<p className='project-desc'>Simple calculator with React and Flexbox</p>
-					<a href='https://github.com/Humphreyj/calculon'><i className="fas fa-code"></i></a>
+					<div className="proj-buttons">
+						<a href='https://humphrey-calculator.netlify.com/' className='proj-link'>View Site</a>
+						<a href='https://github.com/Humphreyj/calculon'><i className="fas fa-code"></i></a>
+					</div>{/*Project buttons*/}
 				</div>
 			</div>
 
