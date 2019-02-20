@@ -8,6 +8,13 @@ import Footer from './components/Footer'
 import {BrowserRouter, Route} from 'react-router-dom'
 import axios from 'axios'
 
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
 class App extends Component {
 
   state = {
@@ -34,7 +41,7 @@ class App extends Component {
 
       e.preventDefault();
     };
-    
+
   render() {
     return (
       <BrowserRouter>
