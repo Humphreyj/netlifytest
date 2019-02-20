@@ -11,7 +11,7 @@ const Contact = (props) => {
 		return (
 			<div className='contact-form'>
 			<h4>If you are interested in working together, contact me here. I will be in touch shortly!</h4>
-			<form handleSubmit={props.handleSubmit} method='POST' data-netlify='true'>
+			<form handleSubmit={props.handleSubmit} method='POST' netlify>
 				<input 
 				type='text' 
 				id='name'
