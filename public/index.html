@@ -33,7 +33,9 @@
   </head>
   <body>
 
-    <form name='contact' method='POST' netlify netlify-honeypot='bot-field'>
+    <form name='contact' method='POST' netlify netlify-honeypot='bot-field'hidden>
+      <input type="hidden" name="form-name" value="contact" />
+
       <input 
       type='text' 
       id='name'
@@ -62,7 +64,7 @@
       id='message'
       name='message'
       placeholder='Message here...'
-      onChange={props.handleChange} />
+      onChange={props.handleChange}></textarea>
       <br/>
       <button className='submit-button'>Submit</button>
       </form>
