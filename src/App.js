@@ -23,17 +23,18 @@ class App extends Component {
       })
     }
 
-    handleSubmit = async (e) => {
-      e.preventDefault()
-      const { name, email, message} = this.state
-      const form = await axios.post('/api/form',
-      {
-        name,
-        email,
-        message
+   handleSubmit = e => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
       })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
 
-    }
+      e.preventDefault();
+    };
+    
   render() {
     return (
       <BrowserRouter>
