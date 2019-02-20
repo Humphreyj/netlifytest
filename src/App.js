@@ -20,6 +20,7 @@ class App extends Component {
   state = {
       name: '',
       email: '',
+      subject: '',
       message: ''
     }
 
