@@ -12,6 +12,8 @@ const Contact = (props) => {
 			<div className='contact-form'>
 			<h4>If you are interested in working together, contact me here. I will be in touch shortly!</h4>
 			<form handleSubmit={props.handleSubmit} method='POST' netlify>
+				<input type="hidden" name="form-name" value="contact" />
+
 				<input 
 				type='text' 
 				id='name'
