@@ -9,7 +9,7 @@ const Contact = (props) => {
 		return (
 			<div className='contact-form'>
 			<h4>If you are interested in working together, contact me here. I will be in touch shortly!</h4>
-			<form onSubmit={props.handleSubmit} name='contact' method='POST' data-netlify='true'>
+			<form name='contact' method='POST' data-netlify='true'>
 			<input 
 			type='text' 
 			id='name'

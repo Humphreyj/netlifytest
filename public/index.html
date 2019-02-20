@@ -32,6 +32,42 @@
 
   </head>
   <body>
+
+    <form name='contact' method='POST' netlify netlify-honeypot='bot-field'>
+      <input 
+      type='text' 
+      id='name'
+      name='name'
+      placeholder='name'
+      onChange={props.handleChange}
+      />
+      <br/>
+      <input 
+      type='text'
+      id='email'
+      name='email' 
+      placeholder='email'
+      onChange={props.handleChange}
+      />
+      <br/>
+      <input 
+      type='text' 
+      id='subject'
+      name='subject'
+      placeholder='subject'
+      onChange={props.handleChange}
+      />
+      <br/>
+      <textarea
+      id='message'
+      name='message'
+      placeholder='Message here...'
+      onChange={props.handleChange} />
+      <br/>
+      <button className='submit-button'>Submit</button>
+      </form>
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
