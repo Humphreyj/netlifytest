@@ -26,12 +26,18 @@
   text-decoration: none;
   color: white;
 }
+
 .nav-item:hover {
   text-decoration: underline;
 }
 
 .nav:hover {
   color: red;
+}
+
+.social-link {
+  color: #333;
+  margin-left: 5px;
 }
 
 .projects {
@@ -42,6 +48,15 @@
   justify-content: center;
   align-items: center;
   height: auto;
+}
+.projects-heading {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 .project {
   margin: 0px 10px 10px 10px;
@@ -101,11 +116,38 @@ form {
   width: 25%;
   margin: auto;
   cursor: pointer;
+  background-color: #333;
+  color: white;
+  font-family: 'Roboto Condensed',serif;
+  font-size: 18px;
+}
+.submit-button:hover {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
 }
 
-.about-title {
+.title {
   font-family:'Roboto Condensed',sans-serif;
   font-size: 22px;
+}
+.about-heading {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.projects-heading {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 .me {
   border-radius: 12px;
@@ -168,16 +210,22 @@ footer a {
     align-items: center;
   }
 
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   .nav-item:hover {
   text-decoration: none;
-}
+  }
 
 .nav:hover {
   color: white;
-}
+  }
 
 .submit-button {
   width: 50%;
-}
+  }
 
-}
+  }/*media query ends*/

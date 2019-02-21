@@ -7,8 +7,14 @@ import calc from '../img/calc.png'
 
 const Projects = (props) => {
     return (
+    	<div>
+    		<div className="projects-heading">
+    			<h3 className='title'>Projects</h3>
+    			<a href='https://github.com/Humphreyj' className='social-link'>
+                <i className="fab fa-github"></i></a>
+    		</div>
+    		
     	<div className='projects'>
-			
 			<div className='project'>
 				<img className='project-img' src={levelZ} alt='project 2'/>
 				<div className="project-info">
@@ -59,6 +65,8 @@ const Projects = (props) => {
 
 
     	</div>
+    	</div>
+    	
         
     );
 };

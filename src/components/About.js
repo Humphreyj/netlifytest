@@ -16,7 +16,13 @@ const About = (props) => {
 
     return (
     	<div className='about-me'>
-    		<h3 className='about-title'>About Me</h3>
+    		
+    		<div className="about-heading">
+    			<h3 className='about-title title'>About Me</h3>
+					<a href='https://www.linkedin.com/in/joshua-humphrey-113a8a11b/'
+                    className='social-link'><i className=" nav fab fa-linkedin"></i></a>
+    		</div>{/*about heading */}
+
 			<div className='my-photo'>
 				<img className='me' src={meSmiling} alt='Josh Humphrey'/ >
 			</div>
