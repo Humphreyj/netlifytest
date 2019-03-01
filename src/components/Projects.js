@@ -1,6 +1,6 @@
 import React from 'react';
 import bizShop from '../img/bizShop.png'
-import levelZ from '../img/levelZ.png'
+import levelZ from '../img/welp.png'
 import theOar from '../img/theOar.png'
 import weather from '../img/weather.png'
 import calc from '../img/calc.png'
@@ -16,12 +16,12 @@ const Projects = (props) => {
     		
     	<div className='projects'>
 			<div className='project'>
-				<img className='project-img' src={levelZ} alt='project 2'/>
+				<img className='project-img' src={welp} alt='project 2'/>
 				<div className="project-info">
-					<p className='project-desc'>Static website with parallax scrolling.</p>
+					<p className='project-desc'>Water rating APP (WIP)</p>
 					<div className="proj-buttons">
-						<a href='https://cookinglevel0.netlify.com/' className='proj-link'>View Site</a>
-						<a href='https://github.com/Humphreyj/levelZ'><i className="fas fa-code"></i></a>
+						<a href='https://welp.netlify.com/' className='proj-link'>View Site</a>
+						<a href='https://github.com/Humphreyj/welp'><i className="fas fa-code"></i></a>
 
 					</div>{/*Project buttons*/}
 				</div>
