@@ -1,6 +1,6 @@
 import React from 'react';
 import bizShop from '../img/bizShop.png'
-import levelZ from '../img/welp.png'
+import welp from '../img/welp.png'
 import theOar from '../img/theOar.png'
 import weather from '../img/weather.png'
 import calc from '../img/calc.png'
