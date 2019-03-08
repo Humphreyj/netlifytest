@@ -4,7 +4,7 @@
 }
 
 
-
+/*Navigation*/
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -19,11 +19,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 .nav-item {
   margin: 5px 10px 5px 10px;
   font-size: 20px;
   text-decoration: none;
+  color: white;
+}
+.burger {
   color: white;
 }
 
@@ -34,12 +38,92 @@
 .nav:hover {
   color: red;
 }
+/*Navigation*/
 
+/*Toggle Button*/
+ .toggle {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .toggle:focus {
+    outline: none;
+    cursor: pointer;
+  }
+/*Toggle Button*/
+
+/*sidedrawer*/
+.side-navbar {
+  height: 100%;
+  background-color: #ddd;
+  color: #333;
+  box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 300px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+.side-navbar.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: center;
+  
+  color: #333;
+  font-family:'Roboto Condensed', serif;
+
+}
+.side-nav-name {
+  border-bottom: 2px solid black;
+}
+.side-nav-item {
+  padding: 15px 10px 15px 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 28px;
+}
+.side-social {
+  display: flex;
+  width: 60%;
+  justify-content: flex-start;
+}
+.side-social-link {
+  padding: 10px 15px;
+  color: #333;
+}
+/*sidedrawer*/
+
+/*Backdrop*/
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+/*Backdrop*/
+
+/*Projects*/
 .social-link {
   color: #333;
   margin-left: 5px;
 }
-
 .projects {
   padding-top: 50px;
   display: flex;
@@ -90,26 +174,36 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
 .project-img {
   height: 200px;
   width: 300px;
   outline: 1px solid #333;
 }
 
-.fas {
+.code {
   color: #333;
 }
 
-.fas:hover {
-  color: red;
-}
+/*Projects*/
 
+/*Contact*/
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
   margin: auto;
+}
+input {
+  height: 24px;
+}
+
+.contact-form {
+  margin-top: 75px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .submit-button {
@@ -126,7 +220,14 @@ form {
   color: #333;
   font-weight: bold;
 }
+.contact-item::placeholder {
+  font-family: 'Oswald', serif;
+  font-size: 20px;
+}
 
+/*Contact*/
+
+/*About*/
 .title {
   font-family:'Roboto Condensed',sans-serif;
   font-size: 22px;
@@ -140,15 +241,7 @@ form {
   align-items: center;
   font-size: 18px;
 }
-.projects-heading {
-  display: flex;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-}
+
 .me {
   border-radius: 12px;
   height: 215px;
@@ -182,14 +275,8 @@ form {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
+/*About*/
 
-.contact-form {
-  margin-top: 75px;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 footer {
   background-color: #333;
   color: white;
@@ -204,7 +291,7 @@ footer a {
   color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .skills {
     width: 80%;
     align-items: center;
@@ -214,6 +301,9 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .nav-item {
+    display: none;
   }
 
   .nav-item:hover {
@@ -226,6 +316,29 @@ footer a {
 
 .submit-button {
   width: 50%;
+  height: 3.1rem;
+  font-size: 1.5rem;
+  margin: auto;
   }
 
-  }/*media query ends*/
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 200px;
+  }
+
+  }/*max-width query ends*/
+
+  @media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+  .side-navbar {
+    display: none;
+  }
+}

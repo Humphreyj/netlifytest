@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 
@@ -14,30 +14,34 @@ const Contact = (props) => {
 			<form action='/' handleSubmit={props.handleSubmit} method='POST' netlify>
 				<input type="hidden" name="form-name" value="contact" />
 				<input 
+				className='contact-item'
 				type='text' 
 				id='name'
 				name='name'
-				placeholder='name'
+				placeholder='Name'
 				onChange={props.handleChange}
 				/>
 				<br/>
-				<input 
+				<input
+				className='contact-item' 
 				type='text'
 				id='email'
 				name='email' 
-				placeholder='email'
+				placeholder='E-mail'
 				onChange={props.handleChange}
 				/>
 				<br/>
-				<input 
+				<input
+				className='contact-item' 
 				type='text' 
 				id='subject'
 				name='subject'
-				placeholder='subject'
+				placeholder='Subject'
 				onChange={props.handleChange}
 				/>
 				<br/>
 				<textarea
+				className='contact-item'
 				id='message'
 				name='message'
 				placeholder='Message here...'

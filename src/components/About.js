@@ -35,15 +35,15 @@ const About = (props) => {
 			
 				
 				<div className="skill-box">
-					<p className="skill html5"><i className="fab fa-html5"></i> HTML5: Proficient</p>
-					<p className="skill css3"><i className="fab fa-css3-alt"></i> CSS3: Proficient</p>
-					<p className="skill javascript"><i className="fab fa-js-square"></i> JavaScript: Learning</p>
+					<p className="skill html5"><i className="fab fa-html5"></i> HTML5</p>
+					<p className="skill css3"><i className="fab fa-css3-alt"></i> CSS3</p>
+					<p className="skill javascript"><i className="fab fa-js-square"></i> JavaScript</p>
 					
 				</div>
 				<div className="skill-box">
-					<p className="skill css3 react"><i className="fab fa-react"></i>React: Proficient</p>
-					<p className="skill git"><i class="fab fa-github-square"></i> Git: Proficient</p>
-					<p className="skill css3"><i class="fab fa-adobe"></i> Adobe Creative : Learning</p>
+					<p className="skill css3 react"><i className="fab fa-react"></i>React</p>
+					<p className="skill git"><i class="fab fa-github-square"></i> Git</p>
+					<p className="skill css3"><i class="fab fa-adobe"></i> Adobe </p>
 				</div>
 
 			</div>

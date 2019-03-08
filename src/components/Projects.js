@@ -1,5 +1,5 @@
 import React from 'react';
-import bizShop from '../img/bizShop.png'
+
 import welp from '../img/welp.png'
 import theOar from '../img/theOar.png'
 import weather from '../img/weather.png'
@@ -20,8 +20,8 @@ const Projects = (props) => {
 				<div className="project-info">
 					<p className='project-desc'>Water rating APP (WIP)</p>
 					<div className="proj-buttons">
-						<a href='https://welp.netlify.com/' className='proj-link'>View Site</a>
-						<a href='https://github.com/Humphreyj/welp'><i className="fas fa-code"></i></a>
+						<a href='https://welp.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/welp' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
@@ -32,8 +32,8 @@ const Projects = (props) => {
 				<div className="project-info">
 					<p className='project-desc'>Ship tracker for a seafaring tabletop adventure.</p>
 					<div className="proj-buttons">
-						<a href='https://ship-manager.netlify.com/' className='proj-link'>View Site</a>
-						<a href='https://github.com/Humphreyj/ship-manager'><i className="fas fa-code"></i></a>
+						<a href='https://ship-manager.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/ship-manager' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
@@ -44,8 +44,8 @@ const Projects = (props) => {
 				<div className="project-info">
 					<p className='project-desc'>Weather App with React and Flexbox</p>
 					<div className="proj-buttons">
-						<a href='https://humphrey-weather.netlify.com/' className='proj-link'>View Site</a>
-						<a href='https://github.com/Humphreyj/weather-app'><i className="fas fa-code"></i></a>
+						<a href='https://humphrey-weather.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/weather-app' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
@@ -56,8 +56,8 @@ const Projects = (props) => {
 				<div className="project-info">
 					<p className='project-desc'>Simple calculator with React and Flexbox</p>
 					<div className="proj-buttons">
-						<a href='https://humphrey-calculator.netlify.com/' className='proj-link'>View Site</a>
-						<a href='https://github.com/Humphreyj/calculon'><i className="fas fa-code"></i></a>
+						<a href='https://humphrey-calculator.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/calculon' className='proj-link '>View Code</a>
 					</div>{/*Project buttons*/}
 				</div>
 			</div>
