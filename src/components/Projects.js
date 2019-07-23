@@ -18,7 +18,7 @@ const Projects = (props) => {
 			<div className='project'>
 				<img className='project-img' src={pup} alt='project 2'/>
 				<div className="project-info">
-					<p className='project-desc'>Water rating APP (WIP)</p>
+					<p className='project-desc'>Puppy Training APP (WIP)</p>
 					<div className="proj-buttons">
 						<a href='https://puppy-trainer.netlify.com/' className='proj-link '>View Site</a>
 						<a href='https://github.com/Humphreyj/puppy-trainer' className='proj-link '>View Code</a>
