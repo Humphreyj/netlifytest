@@ -1,6 +1,6 @@
 import React from 'react';
 
-import welp from '../img/welp.png'
+import pup from '../img/ultimateskill.png'
 import theOar from '../img/theOar.png'
 import weather from '../img/weather.png'
 import calc from '../img/calc.png'
@@ -16,12 +16,12 @@ const Projects = (props) => {
     		
     	<div className='projects'>
 			<div className='project'>
-				<img className='project-img' src={welp} alt='project 2'/>
+				<img className='project-img' src={pup} alt='project 2'/>
 				<div className="project-info">
 					<p className='project-desc'>Water rating APP (WIP)</p>
 					<div className="proj-buttons">
-						<a href='https://welp.netlify.com/' className='proj-link '>View Site</a>
-						<a href='https://github.com/Humphreyj/welp' className='proj-link '>View Code</a>
+						<a href='https://puppy-trainer.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/puppy-trainer' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
