@@ -2,8 +2,8 @@ import React from 'react';
 
 import pup from '../img/ultimateskill.png'
 import theOar from '../img/theOar.png'
-import weather from '../img/weather.png'
-import calc from '../img/calc.png'
+import lander from '../img/lander.png'
+
 
 const Projects = (props) => {
     return (
@@ -40,27 +40,17 @@ const Projects = (props) => {
 			</div>
 
 			<div className='project'>
-				<img className='project-img' src={weather} alt='project 4'/>
+				<img className='project-img' src={lander} alt='project 4'/>
 				<div className="project-info">
-					<p className='project-desc'>Weather App with React and Flexbox</p>
+					<p className='project-desc'>Home page with weather.</p>
 					<div className="proj-buttons">
-						<a href='https://humphrey-weather.netlify.com/' className='proj-link '>View Site</a>
-						<a href='https://github.com/Humphreyj/weather-app' className='proj-link '>View Code</a>
+						<a href='https://dynamiclander.netlify.com' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/dynamic-lander' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
 			</div>
 
-			<div className='project'>
-				<img className='project-img' src={calc} alt='project 5'/>
-				<div className="project-info">
-					<p className='project-desc'>Simple calculator with React and Flexbox</p>
-					<div className="proj-buttons">
-						<a href='https://humphrey-calculator.netlify.com/' className='proj-link '>View Site</a>
-						<a href='https://github.com/Humphreyj/calculon' className='proj-link '>View Code</a>
-					</div>{/*Project buttons*/}
-				</div>
-			</div>
 
 
 
