@@ -29,7 +29,7 @@ const About = (props) => {
 			<p className='about-text'>Good {timeOfDay} 
 			<br/>
 			<br/>
-			For the last decade I was working towards becoming a chef. In 2016 I decided I wanted a change and began learning to code. I have found a new passion and I am seeking new opportunities for education and employment.</p>
+			 I am aFront-End Developer currently enrolled in Lambda's Full Stack Web Development course. I have a passion for creating responsive, dynamic websites and figuring out better ways to do it.</p>
 			<h3>Skills</h3>
 			<div className='skills'>
 			
@@ -42,8 +42,8 @@ const About = (props) => {
 				</div>
 				<div className="skill-box">
 					<p className="skill css3 react"><i className="fab fa-react"></i>React</p>
-					<p className="skill git"><i class="fab fa-github-square"></i> Git</p>
-					<p className="skill css3"><i class="fab fa-adobe"></i> Adobe </p>
+					<p className="skill git"><i className="fab fa-github-square"></i> Git</p>
+					<p className="skill css3"><i className="fab fa-adobe"></i> Adobe </p>
 				</div>
 
 			</div>

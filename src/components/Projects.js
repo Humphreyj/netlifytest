@@ -1,7 +1,7 @@
 import React from 'react';
 
 import pup from '../img/ultimateskill.png'
-import theOar from '../img/theOar.png'
+import nasa from '../img/nasa.png'
 import lander from '../img/lander.png'
 
 
@@ -28,12 +28,12 @@ const Projects = (props) => {
 			</div>
 
 			<div className='project'>
-				<img className='project-img' src={theOar} alt='project 3'/>
+				<img className='project-img' src={nasa} alt='project 3'/>
 				<div className="project-info">
-					<p className='project-desc'>Ship tracker for a seafaring tabletop adventure.</p>
+					<p className='project-desc'>A web Application that consumes Nasa's Picture of the Day API.</p>
 					<div className="proj-buttons">
-						<a href='https://ship-manager.netlify.com/' className='proj-link '>View Site</a>
-						<a href='https://github.com/Humphreyj/ship-manager' className='proj-link '>View Code</a>
+						<a href='https://spaceyall.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/nasa-photo-of-the-day' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
@@ -42,7 +42,7 @@ const Projects = (props) => {
 			<div className='project'>
 				<img className='project-img' src={lander} alt='project 4'/>
 				<div className="project-info">
-					<p className='project-desc'>Home page with weather.</p>
+					<p className='project-desc'>Landing page that consumes Google's Geolocation API, passes that data to OpenWeatherMap API and returns the local weather. Also displays the price of Bitcoin and Ethereum using the Coin Compare API.</p>
 					<div className="proj-buttons">
 						<a href='https://dynamiclander.netlify.com' className='proj-link '>View Site</a>
 						<a href='https://github.com/Humphreyj/dynamic-lander' className='proj-link '>View Code</a>

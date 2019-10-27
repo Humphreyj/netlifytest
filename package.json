@@ -10,7 +10,7 @@
     "express": "^4.16.4",
     "nodemailer": "^5.1.1",
     "nodemon": "^1.18.10",
-    "react": "^16.8.1",
+    "react": "^16.11.0",
     "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3"
