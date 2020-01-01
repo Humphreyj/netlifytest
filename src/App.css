@@ -14,6 +14,7 @@
   font-family:'Roboto Condensed', serif;
   background-color: #333;
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 .nav-items {
   display: flex;
@@ -38,6 +39,8 @@
 .nav:hover {
   color: red;
 }
+
+
 /*Navigation*/
 
 /*Toggle Button*/
@@ -146,18 +149,22 @@
   margin: 0px 10px 10px 10px;
   box-shadow: 0px 4px 6px #333;
   padding: 5px;
-  min-width: 330px;
+  width: 40%;
+  min-height: 22em;
 }
 .project-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 10em;
 }
 .project-desc {
   font-family: 'Merriweather', sans-serif;
   font-size: 14px;
   font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
 }
 .proj-buttons {
   display: flex;
@@ -292,6 +299,10 @@ footer a {
 }
 
 @media (max-width: 768px) {
+
+  .project {
+    width: 100%;
+  }
   .skills {
     width: 80%;
     align-items: center;

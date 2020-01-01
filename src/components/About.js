@@ -29,7 +29,7 @@ const About = (props) => {
 			<p className='about-text'>Good {timeOfDay} 
 			<br/>
 			<br/>
-			 I am aFront-End Developer currently enrolled in Lambda's Full Stack Web Development course. I have a passion for creating responsive, dynamic websites and figuring out better ways to do it.</p>
+			 I am a Front-End Developer currently enrolled in Lambda's Full Stack Web Development course. I have a passion for creating responsive, dynamic websites and figuring out better ways to do it.</p>
 			<h3>Skills</h3>
 			<div className='skills'>
 			
