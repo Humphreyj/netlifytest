@@ -3,6 +3,7 @@ import React from 'react';
 import outpost from '../img/outpost.png'
 import nasa from '../img/nasa.png'
 import lander from '../img/lander.png'
+import quick from '../img/quick.png'
 
 
 const Projects = (props) => {
@@ -21,7 +22,7 @@ const Projects = (props) => {
 					<p className='project-desc'>Outpost Radio
 					<br/>
 					<br/>
-					The webiste for a 'Pirate Radio' station. I was tasked with the redesign of the site and implementation of additional features (WIP)
+					The Front End for a 'Pirate Radio' station. I was tasked with the redesign of the site and implementation of additional features (WIP)
 					</p>
 					<div className="proj-buttons">
 						<a href='https://outpost-radio.netlify.com/' className='proj-link '>View Site</a>
@@ -58,6 +59,22 @@ const Projects = (props) => {
 					<div className="proj-buttons">
 						<a href='https://dynamiclander.netlify.com' className='proj-link '>View Site</a>
 						<a href='https://github.com/Humphreyj/dynamic-lander' className='proj-link '>View Code</a>
+
+					</div>{/*Project buttons*/}
+				</div>
+			</div>
+
+			<div className='project'>
+				<img className='project-img' src={quick} alt='project 2'/>
+				<div className="project-info">
+					<p className='project-desc'>Quick Dice
+					<br/>
+					<br/>
+					A custom dice roller made with React. User can save common dice roll to speed up gameplay.
+					</p>
+					<div className="proj-buttons">
+						<a href='https://quick-dice.netlify.com/' className='proj-link '>View Site</a>
+						<a href='https://github.com/Humphreyj/quickr-dice' className='proj-link '>View Code</a>
 
 					</div>{/*Project buttons*/}
 				</div>
