@@ -3,7 +3,7 @@
 .name-and-skills {
     width: 20%;
 
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
     .skills-title {
         text-align: center;
         font-size: 2.5em;
@@ -14,7 +14,7 @@
     }
     @media(max-width: 500px) {
         transform: translateX(-205%);
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-out;
         z-index: 200;
         position: fixed;
         
@@ -22,7 +22,7 @@
 }
 
 .name-and-skills-open {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
     z-index: 300;
     .skills-title {
         text-align: center;
@@ -33,7 +33,7 @@
         font-weight: bold;
     }
     @media(max-width: 500px) {
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-out;
         background-color: white;
         height: 100%;
 

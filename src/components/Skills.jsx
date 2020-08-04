@@ -3,7 +3,7 @@ import React from 'react';
 import reactImg from '../img/react.png'
 import JS from '../img/js.png';
 import HTML from '../img/hmtl.png';
-import CSS from '../img/css.png';
+import css from '../img/css.png';
 import node from '../img/node.jpg';
 import vs from '../img/vs.png'; 
 import sass from '../img/sass.png';
@@ -20,7 +20,7 @@ const Skills = () => {
         </div>
 
         <div className="skill css">
-            <img src={CSS} alt="react logo"/>
+            <img src={css} alt="react logo"/>
             <p className="skill-title">CSS</p>
         </div>
 

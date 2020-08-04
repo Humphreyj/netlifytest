@@ -26,7 +26,7 @@ const {showSkills, toggleSkills} =useContext(UIC);
             <Project
             img={localMarket}
             name="Local Market"
-            stack="JavaScript,React, Sass"
+            stack="JavaScript, React, Sass"
             description="The Front End for an online grocery store. Users can navigate through items and place orders. Administrator can add and edit items in their store."
             site='https://localmarket.netlify.app/'
             git='https://github.com/Humphreyj/to-go'
@@ -34,7 +34,7 @@ const {showSkills, toggleSkills} =useContext(UIC);
             <Project
             img={nasa}
             name="Nasa Photo of the Day"
-            stack="JavaScript,React, Styled Components"
+            stack="JavaScript, React, Styled Components"
             description="A web application that consumes NASA's Photo of the Day API,and returns the weather data on Mars if it is available."
             site='https://spaceyall.netlify.app/'
             git='https://github.com/Humphreyj/nasa-photo-of-the-day/tree/josh-humphrey'
