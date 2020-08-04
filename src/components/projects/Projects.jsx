@@ -19,7 +19,7 @@ const {showSkills, toggleSkills} =useContext(UIC);
             img={lander}
             name="Dynamic Home Page"
             stack="HTML, CSS, JavaScript"
-            description="A homepage that retrieves the user's locations and returns the local weather. Also diplays the current price of Bitcoin and Ethereum using the CoinMarketCap API. User can set their name and current goal for the day."
+            description="A homepage that retrieves the user's location and returns the local weather. Also diplays the current price of Bitcoin and Ethereum using the CoinMarketCap API. User can set their name and current goal for the day."
             site='https://dynamiclander.netlify.app/'
             git='https://github.com/Humphreyj/dynamic-lander'
              />

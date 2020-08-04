@@ -5,19 +5,17 @@
     align-items: center;
     flex-direction: column;
     transition: all 0.3s ease;
+    
 
     .skill {
         width: 100%;
         display: flex;
         align-items: center;
         padding: 5px;
-
-       
         img{
             height: 60px;
             margin-left: 5px;
         }
-       
         p {
             font-size: 2.4em;
             font-weight: bold;
@@ -42,7 +40,7 @@
             img{
             
                 height: 60px;
-                margin: 10px 0 0 5px;
+                margin: 10 0 0 5px;
             }
            
             p {
@@ -55,7 +53,7 @@
             img{
             
                 height: 40px;
-                margin: 10px 0 0 5px;
+                margin: 0 0 0 5px;
             }
            
             p {
@@ -64,9 +62,32 @@
                 margin-left: 10px;
             } 
         }//800px
-        @media(max-width: 500px) {
-            z-index: 300;
-        }
+
+    }
+    @media(max-width: 500px) {
+        z-index: 300;
+        height: 100vh;
+        overflow-y: scroll;
+        position: fixed;
+        background-color: rgba(5, 4, 4, 0.8);
+        color: white;
+        width: 50%;
+        .skill {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            img{
+                height: 40px;
+                margin-left: 5px;
+            }
+            p {
+                font-size: 1.4em;
+                font-weight: bold;
+                margin-left: 10px;
+                font-family: $sub-title-font;
+            } 
+        }//skill
     }
     
 }

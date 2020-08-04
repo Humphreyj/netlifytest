@@ -13,7 +13,7 @@ import git from '../img/git.png';
 const Skills = () => {
     return (
         <div className="skills">
-        
+        <h4 className="skills-title">Skills</h4>
         <div className="skill html">
             <img src={HTML} alt="react logo"/>
             <p className="skill-title">HTML 5</p>

@@ -6,7 +6,6 @@ const NameAndSkills = () => {
     const {showSkills} = useContext(UIC);
     return (
         <div className={showSkills ? 'name-and-skills-open' : 'name-and-skills'}>
-            <h4 className="skills-title">Skills</h4>
         <Skills />  
         </div>
     );
