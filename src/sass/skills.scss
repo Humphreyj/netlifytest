@@ -5,8 +5,18 @@
     align-items: center;
     flex-direction: column;
     transition: all 0.3s ease-out;
+    position: fixed;
+    overflow-y: scroll;
+    height: 100vh;
+    &::-webkit-scrollbar {
+        width: 1px;
+      }
     
-
+    .skills-title {
+        border-bottom: 2px solid black;
+        width: 80%;
+        margin: 0 auto;
+    }
     .skill {
         width: 100%;
         display: flex;
