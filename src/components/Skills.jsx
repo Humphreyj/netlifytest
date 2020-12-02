@@ -1,69 +1,77 @@
-import React from 'react';
+import React,{ useContext } from 'react';
+import UIC from '../context/UIC';
+import { motion } from 'framer-motion';
+import  { skillsData } from '../data/skillsData';
 
-import reactImg from '../img/react.png'
-import JS from '../img/js.png';
-import HTML from '../img/hmtl.png';
-import css from '../img/css.png';
-import node from '../img/node.jpg';
-import postgres from '../img/postgres.png'; 
-import sass from '../img/sass.png';
-import less from '../img/less.png';
-import git from '../img/git.png';
-import redux from '../img/redux.png';
+
 
 const Skills = () => {
+    const {animationPhase} = useContext(UIC);
+
+    const title = {
+        hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              duration: .9,
+            }
+          }
+      }
+
+    const container = {
+        hidden: { opacity: 0,x: -100 },
+        visible: {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            staggerChildren: .2,
+            duration: .2,
+            
+          }
+        }
+      };
+      
+      const item = {
+        hidden: { y: 100,opacity: 0 },
+        visible: {
+          opacity:1,
+          y: 0
+        }
+      };
     return (
         <div className="skills">
-        <h4 className="skills-title">Skills</h4>
-        <div className="skill html">
-            <img src={HTML} alt="html logo"/>
-            <p className="skill-title">HTML 5</p>
-        </div>
-
-        <div className="skill css">
-            <img src={css} alt="css logo"/>
-            <p className="skill-title">CSS</p>
-        </div>
-
-        <div className="skill vscode">
-            <img src={sass} alt="react logo"/>
-            <p className="skill-title">Sass</p>
-        </div>
-
-        <div className="skill vscode">
-            <img src={less} alt="react logo"/>
-            <p className="skill-title">Less</p>
-        </div>
-
-        <div className="skill javascript">
-            <img src={JS} alt="javascript logo"/>
-            <p className="skill-title">JavaScript</p>
-        </div>
-
-        <div className="skill react">
-            <img src={reactImg} alt="react logo"/>
-            <p className="skill-title">React.js</p>
-        </div>
-
-        <div className="skill react">
-            <img src={redux} alt="redux logo"/>
-            <p className="skill-title">Redux</p>
-        </div>
-
-        <div className="skill node">
-            <img src={node} alt="node logo"/>
-            <p className="skill-title">Node.js</p>
-        </div>
         
-        <div className="skill vscode">
-            <img src={postgres} alt="postgres logo"/>
-            <p className="skill-title">Postgres</p>
-        </div>
-
-        <div className="skill git">
-            <img src={git} alt="react logo"/>
-            <p className="skill-title">Git</p>
-        </div>
+        {animationPhase >= 3 ? <motion.div
+                className= "outer"
+                variants={container}
+                initial="hidden"
+                animate={skillsData.length > 0 && "visible"}
+            >
+              <motion.h4 
+              className="skills-title"
+              variants={title}
+              initial="hidden"
+              animate="visible"
+              >Skills
+              </motion.h4>
+            {skillsData.map(skill => {
+                return (
+                    
+                <motion.div
+                className= "inner"
+                key={skill.id}
+                variants={item}
+                >
+                    <div className="skill">
+                        <img src={skill.img} alt={`${skill.name} logo`}/>
+                        <p>{skill.name}</p>
+                    </div>
+                </motion.div>
+                    )
+                })}
+                </motion.div> : ''}
+        
     </div>
     );
 }

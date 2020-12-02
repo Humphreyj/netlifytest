@@ -12,8 +12,15 @@ function App() {
   const toggleSkills = () => {
       setShowSkills(!showSkills);
   }
+
+  const [animationPhase, setAnimationPhase] = useState(1)
+
+  const onComplete = () => {
+    setAnimationPhase((animationPhase) => (animationPhase += 1))
+    
+  }
   return (
-    <UIC.Provider value={{showSkills, toggleSkills}}>
+    <UIC.Provider value={{showSkills, toggleSkills, animationPhase, onComplete}}>
     <div className="App">
         <NameAndSkills />
         <Projects />

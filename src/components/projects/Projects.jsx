@@ -1,56 +1,94 @@
-import React,{useState,useContext} from 'react';
+import React,{useEffect,useContext} from 'react';
 import Project from'./Project';
 import Name from '../Name';
 import UIC from '../../context/UIC';
-import lander from '../../img/lander.png';
-import localMarket from '../../img/localmarket.png';
-import nasa from '../../img/nasa.png';
-import outpost from '../../img/outpost.png';
+import {projectData} from '../../data/projectData';
+import {motion} from 'framer-motion'
 
 const Projects = () => {
-const {showSkills, toggleSkills} =useContext(UIC);
+const {animationPhase, onComplete} =useContext(UIC);
+
+const title = {
+  hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: .9,
+      }
+    }
+}
+const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        staggerChildren: .4,
+        duration: .6,
+        
+      }
+    }
+  };
+  
+  const item = {
+    hidden: { y: 100,opacity: 0 },
+    visible: {
+      opacity:1,
+      y: 0
+    }
+  };
+  useEffect(() => {
+    console.log(animationPhase)
+  },[animationPhase])
+
     return (
-        <div className='projects-container'>
+        <div className="showcase">
+          
             <Name />
-            <div className={showSkills ? "skills-toggle open" : "skills-toggle"}>
-                <p onClick={toggleSkills}>Skills</p>
-            </div>
-            <h1 className="projects-title">Recent Projects</h1>
-            <Project
-                img={outpost}
-                name="Outpost Radio"
-                stack="JavaScript, React, Sass"
-                description="An online radio station Star Citizen fans. Designed, developed, and deployed the new front-end."
-                site='https://outpost-radio.netlify.app/'
-                git='https://github.com/Humphreyj/pirate-radio'
-             />
+         
+            
+            <motion.h1 
+              className="projects-title"
+              variants={title}
+              initial="hidden"
+              animate="visible"
+              >Recent Projects
+              </motion.h1>
 
-            <Project
-                img={localMarket}
-                name="Local Market"
-                stack="React, Sass, Context API"
-                description="The Front End for an online grocery store. Users can navigate through items and place orders. Administrator can add and edit items in their store."
-                site='https://localmarket.netlify.app/'
-                git='https://github.com/Humphreyj/to-go'
-                />
-            <Project
-                img={nasa}
-                name="Nasa Photo of the Day"
-                stack="JavaScript, React, Styled Components"
-                description="A web application that consumes NASA's Photo of the Day API,and returns the weather data on Mars if it is available."
-                site='https://spaceyall.netlify.app/'
-                git='https://github.com/Humphreyj/nasa-photo-of-the-day/tree/josh-humphrey'
-                />
-
-            <Project
-                img={lander}
-                name="Dynamic Home Page"
-                stack="HTML, CSS, JavaScript"
-                description="A homepage that retrieves the user's location and returns the local weather. Also diplays the current price of Bitcoin and Ethereum using the CoinMarketCap API. User can set their name and current goal for the day."
-                site='https://dynamiclander.netlify.app/'
-                git='https://github.com/Humphreyj/dynamic-lander'
-                />
+            <div className='projects-container'>
+            {animationPhase >= 2 ? <motion.div
+                className= "outer"
+                variants={container}
+                initial="hidden"
+                animate={projectData.length > 0 && "visible"}
+                onAnimationComplete={onComplete}
+            >
+            {projectData.map(proj => {
+                return (
+                    
+                <motion.div
+                className= "inner"
+                key={proj.id}
+                variants={item}
+                >
+                    <Project
+                        img={proj.img}
+                        name={proj.name}
+                        role={proj.role}
+                        stack={proj.stack}
+                        description={proj.description}
+                        site={proj.site}
+                        git={proj.code}
+                    />
+                </motion.div>
+                    )
+                })}
+                </motion.div> : ''}
+            
+            
         </div>
+        </div>
+        
     );
 }
 

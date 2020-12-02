@@ -1,9 +1,29 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import UIC from '../context/UIC';
+import { motion } from 'framer-motion';
 
 const Name = () => {
+    const {onComplete} = useContext(UIC)
+    const namePlate = {
+        hidden: {opacity: 0},
+        visible: {
+          
+          opacity: 1,
+          transition: {
+            duration: .5
+        }
+        },
+        
+      }
     return (
         
-    <div className='info'>
+    <motion.div 
+    className='info'
+    variants={namePlate}
+    initial="hidden"
+    animate="visible"
+    onAnimationComplete={onComplete}
+    >
         <h4 className="name">Joshua Humphrey</h4>
         <h4 className="title">Front-End Developer</h4>
         <h4 className="location">Texas, United States</h4>
@@ -13,7 +33,7 @@ const Name = () => {
                 <a href='https://github.com/Humphreyj' className='social-link'>
             <i className="fab fa-github fa-2x"></i></a>
         </div>
-    </div>
+    </motion.div>
         
     );
 }
