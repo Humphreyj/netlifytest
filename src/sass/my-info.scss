@@ -1,7 +1,8 @@
 @import 'fonts.scss';
 
 .info {
-    margin-top: 20px;
+    position: absolute;
+    top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

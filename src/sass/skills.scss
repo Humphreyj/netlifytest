@@ -2,6 +2,7 @@
 
 .skills {
     width: 100%;
+    margin-top: 20px;
     
     transition: all 0.3s ease-out;
    
@@ -12,8 +13,13 @@
     
     .skills-title {
         border-bottom: 2px solid black;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
+        font-size: 2.5em;
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-family: $header-font;
+        font-weight: bold;
     }
     .outer {
         display: flex;
@@ -26,7 +32,8 @@
     }
     .skill {
         width: 100%;
-        
+        box-shadow: 2px 3px 6px #111;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         

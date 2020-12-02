@@ -4,9 +4,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    margin-top: 15%;
 
     .projects-title {
         text-decoration: underline;
+        
+        position: absolute;
+        top: 240px;
     }
 }

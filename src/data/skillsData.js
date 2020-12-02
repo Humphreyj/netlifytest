@@ -9,6 +9,7 @@ import sass from '../img/sass.png';
 import less from '../img/less.png';
 import git from '../img/git.png';
 import redux from '../img/redux.png';
+import python from '../img/python.png';
 
 export const skillsData = [
     {
@@ -64,6 +65,6 @@ export const skillsData = [
     {
         id: 10,
         name: "Python",
-        img: git
+        img: python
     }
 ]

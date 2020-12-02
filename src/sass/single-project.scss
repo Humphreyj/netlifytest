@@ -1,7 +1,8 @@
 @import 'fonts.scss';
 .outer {
     
-        width: 70%;
+        width: 87%;
+        height: 100%;
         margin: 0 auto;
         position: relative;
         flex-wrap: wrap;
@@ -10,7 +11,7 @@
         align-items: center;
     .inner {
         
-        width: 40%;
+        width: 45%;
         .project {
             min-height: 680px;
             text-align: center;
@@ -46,11 +47,12 @@
                 
                 .project-desc {
                     font-size: 1.4em;
-                    width: 60%;
+                    width: 75%;
                     margin: 0 auto;
                     font-family: $sub-title-font;
                     text-align: center;
                     margin-bottom: 5px;
+                    
                 }
             }
             .proj-buttons {
