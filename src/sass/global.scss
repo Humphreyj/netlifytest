@@ -5,3 +5,16 @@
 @import 'my-info.scss';
 
 @import 'fonts.scss';
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .App {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+  }

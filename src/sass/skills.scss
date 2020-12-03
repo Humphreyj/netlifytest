@@ -1,49 +1,90 @@
 @import 'fonts.scss';
 
 .skills {
-    width: 100%;
-    margin-top: 20px;
-    
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
     transition: all 0.3s ease-out;
+    background-color: #fcfcfc;
+    
+    
+    
    
-    height: 100vh;
     &::-webkit-scrollbar {
         width: 1px;
       }
     
     .skills-title {
         border-bottom: 2px solid black;
-        width: 100%;
-        margin: 0 auto;
+        width: 75%;
+        margin: 0;
         font-size: 2.5em;
-        margin-top: 5px;
-        margin-bottom: 0;
         font-family: $header-font;
         font-weight: bold;
+        
     }
     .outer {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        justify-content: flex-start;
+        width: 95%;
+        height: auto;
 
         .inner {
-            width: 100%;
+            width: 75%;
+            background-color: white;
+            margin: 5px 0;
+            .skill {
+                padding-left: 1%;
+                box-shadow: 2px 3px 6px rgba(#111111, 0.4);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                
+                img{
+                    height: 60px;
+                    
+                }
+                p {
+                    font-size: 2em;
+                    font-family: $sub-title-font;
+                } 
+            }
         }
     }
-    .skill {
-        width: 100%;
-        box-shadow: 2px 3px 6px #111;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        
-        img{
-            height: 60px;
+    @media(max-width: 2555px) {
+        .skills-title {
+            
+            font-size: 2.2em;
             
         }
-        p {
-            font-size: 2em;
-            font-family: $sub-title-font;
-        } 
+        .outer {
+            
+    
+            .inner {
+                
+                .skill {
+                    
+                    
+                    img{
+                        height: 50px;
+                        
+                    }
+                    p {
+                        font-size: 1.6em;
+                        font-family: $sub-title-font;
+                    } 
+                }
+            }
+        }
+    }
+    @media(max-width: 768px) {
+        width: 55%;
+        .outer {
+            .inner {
+                width: 100%;
+            }
+        }
     }
 }

@@ -42,7 +42,7 @@ const Skills = () => {
     return (
         <div className="skills">
         
-        {animationPhase >= 3 ? <motion.div
+        {animationPhase >= 2 ? <motion.div
                 className= "outer"
                 variants={container}
                 initial="hidden"

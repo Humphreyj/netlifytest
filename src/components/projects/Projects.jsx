@@ -23,18 +23,18 @@ const container = {
       opacity: 1,
       scale: 1,
       transition: {
-        staggerChildren: .4,
-        duration: .6,
+        staggerChildren: .75,
+        duration: .75,
         
       }
     }
   };
   
   const item = {
-    hidden: { y: 100,opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
       opacity:1,
-      y: 0
+     
     }
   };
   useEffect(() => {

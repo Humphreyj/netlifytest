@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import './App.css';
 import NameAndSkills from './components/NameAndSkills';
 import Projects from './components/projects/Projects';
 
