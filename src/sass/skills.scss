@@ -1,90 +1,79 @@
-@import 'fonts.scss';
+@import "fonts.scss";
 
 .skills {
-    width: 20%;
-    height: 100%;
-    position: fixed;
-    overflow-y: scroll;
-    transition: all 0.3s ease-out;
-    background-color: #fcfcfc;
-    
-    
-    
-   
-    &::-webkit-scrollbar {
-        width: 1px;
-      }
-    
-    .skills-title {
-        border-bottom: 2px solid black;
-        width: 75%;
-        margin: 0;
-        font-size: 2.5em;
-        font-family: $header-font;
-        font-weight: bold;
-        
-    }
-    .outer {
+  width: 19rem;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  transition: all 0.3s ease-out;
+  background-color: #fcfcfc;
+  padding-left: 0.5rem;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .skills-title {
+    border-bottom: 2px solid black;
+    width: 18rem;
+    margin: 0;
+    font-size: 2.5em;
+    font-family: $header-font;
+    font-weight: bold;
+  }
+  .outer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+    height: auto;
+
+    .inner {
+      width: 17rem;
+      background-color: white;
+      margin: 5px 0;
+      .skill {
+        padding-left: 1%;
+        box-shadow: 2px 3px 6px rgba(#111111, 0.4);
+        border-radius: 8px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        width: 95%;
-        height: auto;
 
-        .inner {
-            width: 75%;
-            background-color: white;
-            margin: 5px 0;
-            .skill {
-                padding-left: 1%;
-                box-shadow: 2px 3px 6px rgba(#111111, 0.4);
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                
-                img{
-                    height: 60px;
-                    
-                }
-                p {
-                    font-size: 2em;
-                    font-family: $sub-title-font;
-                } 
-            }
+        img {
+          height: 4rem;
+          width: 4rem;
         }
+        p {
+          font-size: 2em;
+          font-family: $sub-title-font;
+        }
+      }
     }
-    @media(max-width: 2555px) {
-        .skills-title {
-            
-            font-size: 2.2em;
-            
-        }
-        .outer {
-            
-    
-            .inner {
-                
-                .skill {
-                    
-                    
-                    img{
-                        height: 50px;
-                        
-                    }
-                    p {
-                        font-size: 1.6em;
-                        font-family: $sub-title-font;
-                    } 
-                }
-            }
-        }
+  }
+  @media (max-width: 2555px) {
+    .skills-title {
+      font-size: 2.2em;
     }
-    @media(max-width: 768px) {
-        width: 55%;
-        .outer {
-            .inner {
-                width: 100%;
-            }
+    .outer {
+      .inner {
+        .skill {
+          img {
+            height: 50px;
+          }
+          p {
+            font-size: 1.6em;
+            font-family: $sub-title-font;
+          }
         }
+      }
     }
+  }
+  @media (max-width: 768px) {
+    width: 55%;
+    .outer {
+      .inner {
+        width: 100%;
+      }
+    }
+  }
 }

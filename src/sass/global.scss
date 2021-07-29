@@ -1,20 +1,21 @@
-@import 'skills.scss';
-@import 'name.scss';
-@import 'projects.scss';
-@import 'single-project.scss';
-@import 'my-info.scss';
+@import "skills.scss";
+@import "name.scss";
+@import "projects.scss";
+@import "single-project.scss";
+@import "my-info.scss";
 
-@import 'fonts.scss';
-
+@import "fonts.scss";
 
 * {
-    box-sizing: border-box;
-  }
-  
-  .App {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-bottom: 50px;
-    
-  }
+  box-sizing: border-box;
+}
+.html {
+  font-size: 62.5%;
+}
+
+.App {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 50px;
+}

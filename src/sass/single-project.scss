@@ -1,109 +1,107 @@
-@import 'fonts.scss';
+@import "fonts.scss";
 .outer {
-    
-        width: 87%;
-        height: 100%;
+  width: 70rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .inner {
+    width: 45%;
+    .project {
+      min-height: 38rem;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 0.8rem;
+      padding: 1%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 3px 6px rgba(#111111, 0.4);
+      z-index: 100;
+      .project-img {
+        margin-top: 1rem;
+        width: 25rem;
+        height: 15rem;
+        border-radius: 8px;
+      }
+      .project-title {
+        font-size: 1.7em;
+        font-family: $header-font;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .role {
         margin: 0 auto;
-        position: relative;
-        flex-wrap: wrap;
+      }
+      .tech-stack {
+        margin: 0;
+      }
+      .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .project-desc {
+          font-size: 1.4em;
+          width: 75%;
+          margin: 10px auto;
+          font-family: $sub-title-font;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+      .proj-buttons {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    .inner {
-        
-        width: 45%;
-        .project {
-            min-height: 680px;
-            text-align: center;
-            margin: 20px auto;
-            border-radius: 8px;
-            padding: 1%;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 2px 3px 6px rgba(#111111, 0.4);
-            z-index: 100;
-            .project-img {
-                margin-top: 2% 1%;
-                width: 80%;
-                border-radius: 8px;
-            }
-            .project-title {
-                font-size: 1.7em;
-                font-family: $header-font;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-            .role {
-                margin: 0 auto;
-            } 
-            .tech-stack {
-                margin: 0;
-            };
-            .project-info {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                
-                .project-desc {
-                    font-size: 1.4em;
-                    width: 75%;
-                    margin: 10px auto;
-                    font-family: $sub-title-font;
-                    text-align: center;
-                    margin-bottom: 5px;
-                    
-                }
-            }
-            .proj-buttons {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                a {
-                    margin: 0 10px;
-                    font-size: 1.2em;
-                    font-weight: bold;
-                    color: black;
-                }
-                p {
-                    margin: 0 10px;
-                    font-size: 1.2em;
-                    font-weight: bold;
-                    color: black;
-                }
-                a:hover {
-                    color: blue;
-                }
-            }
-            @media(max-width: 800px) {
-                width: 95%;
-            }
-            @media(max-width: 500px) {
-                width: 95%;
-                min-height: auto;
-                .project-img {
-                    width: 100%;
-                }
-                .project-info {
-                    .project-desc {
-                        width: 100%;
-                    }
-                }
-                .proj-buttons {
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
+        a {
+          margin: 0 10px;
+          font-size: 1.2em;
+          font-weight: bold;
+          color: black;
         }
-    }
-
-    @media(max-width: 1100px) {
-        flex-direction: column;
-
-        .inner {
+        p {
+          margin: 0 10px;
+          font-size: 1.2em;
+          font-weight: bold;
+          color: black;
+        }
+        a:hover {
+          color: blue;
+        }
+      }
+      @media (max-width: 800px) {
+        width: 95%;
+      }
+      @media (max-width: 500px) {
+        width: 95%;
+        min-height: auto;
+        .project-img {
+          width: 100%;
+        }
+        .project-info {
+          .project-desc {
             width: 100%;
+          }
         }
+        .proj-buttons {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
-    //max-width: 1100px
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+
+    .inner {
+      width: 100%;
+    }
+  }
+  //max-width: 1100px
 }
